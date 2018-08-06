@@ -1,0 +1,12 @@
+.manual__picture {
+  border: 1px solid #C1C1C1;
+  border-radius: 4px;
+  margin-bottom: 4rem;
+}
+
+p,
+li {
+  margin-bottom: 2rem;
+  max-width: 60rem;
+}
+
