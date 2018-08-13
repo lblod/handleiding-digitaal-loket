@@ -56,3 +56,16 @@ li {
     display: block !important;
   }
 }
+
+
+.vl-h6 {
+  font-weight: bold;
+}
+
+em {
+  color: #196BC6;
+}
+
+.vl-side-navigation__toggle {
+  padding-right: 1rem;
+}
