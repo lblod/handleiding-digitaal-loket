@@ -69,3 +69,15 @@ em {
 .vl-side-navigation__toggle {
   padding-right: 2rem;
 }
+
+.vl-side-navigation__item > ul {
+  padding-left: 1rem;
+}
+
+.vl-side-navigation__item > ul a {
+  font-size: 1.6rem;
+}
+
+a {
+  cursor: hand;
+}
