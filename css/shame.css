@@ -13,9 +13,31 @@ li {
   max-width: 55rem;
 }
 
+th small,
+small {
+  /*font-size: 90% !important;*/
+}
+
+th p {
+  margin-bottom: 0;
+}
+
 .vl-alert p {
   margin-bottom: 0;
   max-width: auto;
+}
+
+table {
+  margin-bottom: 2rem;
+}
+
+table.vl-data-table--tight th {
+  white-space: initial;
+}
+
+table.vl-data-table--tight th,
+table.vl-data-table--tight td {
+  padding: 0.7rem;
 }
 
 .cus-container--table-of-contents {
@@ -45,6 +67,10 @@ li {
 .cus-bullet-list li {
   margin: 0;
   max-width: none;
+}
+
+.cus-num-list--breathe li {
+  margin-bottom: 2rem;
 }
 
 .cus-u-hidden--m {
