@@ -75,8 +75,10 @@
             <h2 class="vl-title--h4 vl-u-spacer">Waarvoor dient het Loket Lokaal Bestuur?</h2>
             <ul class="vl-icon-list cus-u-spacer--large">
               <li class="vl-icon-list__item"><i class="vl-vi vl-vi-calendar_check" aria-hidden="true"></i> Besluiten en overzichtslijsten kunnen elektronisch bezorgd worden aan de toezichthoudende overheid.</li>
+              <li class="vl-icon-list__item"><i class="vl-vi vl-vi-calendar_check" aria-hidden="true"></i> Berichtgeving over besluiten en overzichtslijsten vanuit de toezichthoudende overheid worden hier verzameld en beantwoord.</li>
               <li class="vl-icon-list__item"><i class="vl-vi vl-vi-calendar_check" aria-hidden="true"></i> De beleids- en beheerscyclus digitale rapportering (BBC-DR) kan bezorgd worden aan de Vlaamse Regering.</li>
-              <li class="vl-icon-list__item"><i class="vl-vi vl-vi-calendar_check" aria-hidden="true"></i> De mandatendatabank kan beheerd worden voor volgende bestuursorganen gemeenteraad, college van burgemeester en schepenen, raad voor maatschappelijk welzijn, vast bureau, bijzonder comité voor de sociale dienst.</li>
+              <li class="vl-icon-list__item"><i class="vl-vi vl-vi-calendar_check" aria-hidden="true"></i> De mandatendatabank kan beheerd worden voor volgende bestuursorganen gemeenteraad, college van burgemeester en schepenen, raad voor maatschappelijk welzijn, vast bureau en bijzonder comité voor de sociale dienst.</li>
+              <li class="vl-icon-list__item"><i class="vl-vi vl-vi-calendar_check" aria-hidden="true"></i> De leidinggevendendatabank kan beheerd worden voor de gemeenten, districten, OCMW’s en provincies.</li>
               <!-- <li class="vl-icon-list__item"><i class="vl-vi vl-vi-calendar_check" aria-hidden="true"></i> Administratieve- en personeelsgegevens kunnen beheerd worden voor de gemeenten, districten, OCMW’s en provincies.</li> -->
             </ul>
             <p>Staan er fouten in deze handleiding? Neem contact op met <a href="mailto:LoketLokaalBestuur@vlaanderen.be">LoketLokaalBestuur@vlaanderen.be</a>.</p> <!-- LoketLokaalBestuur@vlaanderen.be -->
@@ -108,9 +110,6 @@
               <a href="#toezicht">Toezicht</a>
               <ul>
                 <li class="vl-side-navigation__item">
-                  <div><a href="#toezicht-verplicht">Inzendingsplichtige besluiten per bestuur</a></div>
-                </li>
-                <li class="vl-side-navigation__item">
                   <div><a href="#toezicht-locatie">Locatie</a></div>
                 </li>
                 <li class="vl-side-navigation__item">
@@ -122,13 +121,13 @@
                 <li class="vl-side-navigation__item">
                   <div><a href="#toezicht-verplichtevelden">Verplichte velden</a></div>
                 </li>
-                <li class="vl-side-navigation__item">
+<!--                 <li class="vl-side-navigation__item">
                   <div><a href="#toezicht-voorbeeld-specifiek">Voorbeeld: specifiek besluit</a></div>
-                </li>
-                <li class="vl-side-navigation__item">
-                  <div><a href="#toezicht-voorbeeld-besluitenlijst">Voorbeeld: besluitenlijst</a></div>
-                </li>
+                </li> -->
               </ul>
+            </li>
+            <li class="vl-link-list__item">
+              <a href="#berichtencentrum">Berichtencentrum</a>
             </li>
             <li class="vl-link-list__item">
               <a href="#bbcdr">BBC-DR (Beleids- en Beheerscyclus Digitale Rapportering)</a>
@@ -227,6 +226,9 @@
               <a href="#administratievegegevens">Administratieve gegevens</a>
             </li> -->
             <li class="vl-link-list__item">
+              <a href="#leidinggevendenbeheer">Leidinggevendenbeheer</a>
+            </li>
+            <li class="vl-link-list__item">
               <a href="#gebruikersbeheer">Gebruikersbeheer</a>
             </li>
 <!--             <li class="vl-link-list__item">
@@ -273,9 +275,6 @@
                     </a>
                     <ul>
                       <li class="vl-side-navigation__item">
-                        <div><a href="#toezicht-verplicht" data-vl-parent="content-3">Inzendingsplichtige besluiten per bestuur</a></div>
-                      </li>
-                      <li class="vl-side-navigation__item">
                         <div><a href="#toezicht-locatie" data-vl-parent="content-3">Locatie</a></div>
                       </li>
                       <li class="vl-side-navigation__item">
@@ -287,93 +286,96 @@
                       <li class="vl-side-navigation__item">
                         <div><a href="#toezicht-verplichtevelden" data-vl-parent="content-3">Verplichte velden</a></div>
                       </li>
-                      <li class="vl-side-navigation__item">
+<!--                       <li class="vl-side-navigation__item">
                         <div><a href="#toezicht-voorbeeld-specifiek" data-vl-parent="content-3">Voorbeeld: specifiek besluit</a></div>
-                      </li>
-                      <li class="vl-side-navigation__item">
-                        <div><a href="#toezicht-voorbeeld-besluitenlijst" data-vl-parent="content-3">Voorbeeld: besluitenlijst</a></div>
-                      </li>
+                      </li> -->
                     </ul>
                   </li>
                   <li class="vl-side-navigation__item vl-side-navigation__item--parent">
-                    <a class="vl-side-navigation__toggle" href="#bbcdr" data-vl-child="content-4">
+                    <a class="vl-side-navigation__toggle" href="#berichtencentrum" data-vl-child="content-4">
+                      Berichtencentrum
+                      <i class="vl-vi vl-vi-arrow-right-fat"></i>
+                    </a>
+                  </li>
+                  <li class="vl-side-navigation__item vl-side-navigation__item--parent">
+                    <a class="vl-side-navigation__toggle" href="#bbcdr" data-vl-child="content-5">
                       BBC-DR (Beleids- en Beheerscyclus Digitale Rapportering)
                       <i class="vl-vi vl-vi-arrow-right-fat"></i>
                     </a>
                     <ul>
                       <li class="vl-side-navigation__item">
-                        <div><a href="#bbcdr-locatie" data-vl-parent="content-4">Locatie</a></div>
+                        <div><a href="#bbcdr-locatie" data-vl-parent="content-5">Locatie</a></div>
                       </li>
                       <li class="vl-side-navigation__item">
-                        <div><a href="#bbcdr-overzicht" data-vl-parent="content-4">Overzicht &amp; bekijken</a></div>
+                        <div><a href="#bbcdr-overzicht" data-vl-parent="content-5">Overzicht &amp; bekijken</a></div>
                       </li>
                       <li class="vl-side-navigation__item">
-                        <div><a href="#bbcdr-aanleveren" data-vl-parent="content-4">Een dossier aanleveren</a></div>
+                        <div><a href="#bbcdr-aanleveren" data-vl-parent="content-5">Een dossier aanleveren</a></div>
                       </li>
                     </ul>
                   </li>
                   <li class="vl-side-navigation__item vl-side-navigation__item--parent">
-                    <a class="vl-side-navigation__toggle" href="#beleidsrapporten-digitalerapportering-tips" data-vl-child="content-41">
+                    <a class="vl-side-navigation__toggle" href="#beleidsrapporten-digitalerapportering-tips" data-vl-child="content-51">
                       BBC beleidsrapporten en digitale rapportering: 11 handige tips
                     </a>
                   </li>
                   <li class="vl-side-navigation__item vl-side-navigation__item--parent">
-                    <a class="vl-side-navigation__toggle" href="#mandatenbeheer" data-vl-child="content-5">
+                    <a class="vl-side-navigation__toggle" href="#mandatenbeheer" data-vl-child="content-6">
                       Mandatenbeheer
                       <i class="vl-vi vl-vi-arrow-right-fat"></i>
                     </a>
                     <ul>
                       <li class="vl-side-navigation__item">
-                        <a href="#mandatenbeheer-locatie" data-vl-parent="content-5">Locatie</a>
+                        <a href="#mandatenbeheer-locatie" data-vl-parent="content-6">Locatie</a>
                       </li>
 
                       <li class="vl-side-navigation__item">
-                        <a href="#mandatenbeheer-overzicht" data-vl-parent="content-5">Overzicht</a>
+                        <a href="#mandatenbeheer-overzicht" data-vl-parent="content-6">Overzicht</a>
                       </li>
                       <li class="vl-side-navigation__item">
-                        <a href="#mandatenbeheer-totalen" data-vl-parent="content-5">Totalen</a>
+                        <a href="#mandatenbeheer-totalen" data-vl-parent="content-6">Totalen</a>
                       </li>
                       <li class="vl-side-navigation__item">
-                        <a href="#mandatenbeheer-bewerken" data-vl-parent="content-5">Een mandaat bewerken</a>
+                        <a href="#mandatenbeheer-bewerken" data-vl-parent="content-6">Een mandaat bewerken</a>
                       </li>
                       <li class="vl-side-navigation__item">
-                        <a href="#mandatenbeheer-keuze" data-vl-parent="content-5">De juiste keuze maken bij het bewerken van een mandaat</a>
+                        <a href="#mandatenbeheer-keuze" data-vl-parent="content-6">De juiste keuze maken bij het bewerken van een mandaat</a>
                       </li>
                       <li class="vl-side-navigation__item">
-                        <a href="#mandatenbeheer-nieuw" data-vl-parent="content-5">Een nieuw mandaat toevoegen aan een mandataris op de lijst</a>
+                        <a href="#mandatenbeheer-nieuw" data-vl-parent="content-6">Een nieuw mandaat toevoegen aan een mandataris op de lijst</a>
                       </li>
                       <li class="vl-side-navigation__item">
-                        <a href="#mandatenbeheer-buitendelijst" data-vl-parent="content-5">Een mandataris buiten de lijst toevoegen</a>
+                        <a href="#mandatenbeheer-buitendelijst" data-vl-parent="content-6">Een mandataris buiten de lijst toevoegen</a>
                       </li>
                       <li class="vl-side-navigation__item">
-                        <a href="#mandatenbeheer-verwijderen" data-vl-parent="content-5">Een mandaat verwijderen</a>
+                        <a href="#mandatenbeheer-verwijderen" data-vl-parent="content-6">Een mandaat verwijderen</a>
                       </li>
                     </ul>
                   </li>
 
                   <li class="vl-side-navigation__item vl-side-navigation__item--parent">
-                    <a class="vl-side-navigation__toggle" href="#mandatenbeheer-scenarios" data-vl-child="content-6">
+                    <a class="vl-side-navigation__toggle" href="#mandatenbeheer-scenarios" data-vl-child="content-7">
                       Mandatenbeheer scenario's
                       <i class="vl-vi vl-vi-arrow-right-fat"></i>
                     </a>
                     <ul>
                       <li class="vl-side-navigation__item">
-                        <a href="#mandatenbeheer-theorie-1" data-vl-parent="content-6">Scenario: vervanging schepen.</a>
+                        <a href="#mandatenbeheer-theorie-1" data-vl-parent="content-7">Scenario: vervanging schepen.</a>
                       </li>
                       <li class="vl-side-navigation__item">
-                        <a href="#mandatenbeheer-theorie-2" data-vl-parent="content-6">Scenario: vervanging in Raad voor Maatschappelijk Welzijn.</a>
+                        <a href="#mandatenbeheer-theorie-2" data-vl-parent="content-7">Scenario: vervanging in Raad voor Maatschappelijk Welzijn.</a>
                       </li>
                       <li class="vl-side-navigation__item">
-                        <a href="#mandatenbeheer-theorie-3" data-vl-parent="content-6">Scenario: een titelvoerend burgemeester met waarnemend burgemeester en opvolger.</a>
+                        <a href="#mandatenbeheer-theorie-3" data-vl-parent="content-7">Scenario: een titelvoerend burgemeester met waarnemend burgemeester en opvolger.</a>
                       </li>
                       <li class="vl-side-navigation__item">
-                        <a href="#mandatenbeheer-theorie-4" data-vl-parent="content-6">Scenario: Een gemeenteraadslid neemt ontslag, maar behoudt andere mandaten.</a>
+                        <a href="#mandatenbeheer-theorie-4" data-vl-parent="content-7">Scenario: Een gemeenteraadslid neemt ontslag, maar behoudt andere mandaten.</a>
                       </li>
                       <li class="vl-side-navigation__item">
-                        <a href="#mandatenbeheer-theorie-5" data-vl-parent="content-6">Scenario: Wissel Burgemeester-Schepen</a>
+                        <a href="#mandatenbeheer-theorie-5" data-vl-parent="content-7">Scenario: Wissel Burgemeester-Schepen</a>
                       </li>
                       <li class="vl-side-navigation__item">
-                        <a href="#mandatenbeheer-theorie-6" data-vl-parent="content-6">Scenario: Beëindigen van een schepen zonder opvolger.</a>
+                        <a href="#mandatenbeheer-theorie-6" data-vl-parent="content-7">Scenario: Beëindigen van een schepen zonder opvolger.</a>
                       </li>
 <!--                     </ul>
                   </li>
@@ -385,33 +387,39 @@
                     </a>
                     <ul> -->
                       <li class="vl-side-navigation__item">
-                        <a href="#mandatenbeheer-praktijk-1" data-vl-parent="content-7">Voorbeeld Lubbeek: Titelvoerend burgemeester verhinderd, opgevolgd door een waarnemend burgemeester</a>
+                        <a href="#mandatenbeheer-praktijk-1" data-vl-parent="content-8">Voorbeeld Lubbeek: Titelvoerend burgemeester verhinderd, opgevolgd door een waarnemend burgemeester</a>
                       </li>
 <!--                       <li class="vl-side-navigation__item">
-                        <a href="#mandatenbeheer-praktijk-2" data-vl-parent="content-7">Praktisch voorbeeld</a>
+                        <a href="#mandatenbeheer-praktijk-2" data-vl-parent="content-8">Praktisch voorbeeld</a>
                       </li> -->
 <!--                       <li class="vl-side-navigation__item">
-                        <a href="#mandatenbeheer-praktijk-3" data-vl-parent="content-7">Voorgedragen burgemeester wordt niet benoemd</a>
+                        <a href="#mandatenbeheer-praktijk-3" data-vl-parent="content-8">Voorgedragen burgemeester wordt niet benoemd</a>
                       </li> -->
 <!--                       <li class="vl-side-navigation__item">
-                        <a href="#mandatenbeheer-praktijk-4" data-vl-parent="content-7">Praktisch voorbeeld</a>
+                        <a href="#mandatenbeheer-praktijk-4" data-vl-parent="content-8">Praktisch voorbeeld</a>
                       </li> -->
                     </ul>
                   </li>
 <!--                   <li class="vl-side-navigation__item vl-side-navigation__item--parent vl-u-spacer">
-                    <a class="vl-side-navigation__toggle" href="#administratievegegevens" data-vl-child="content-8">
+                    <a class="vl-side-navigation__toggle" href="#administratievegegevens" data-vl-child="content-9">
                       Administratieve gegevens
                       <i class="vl-vi vl-vi-arrow-right-fat"></i>
                     </a>
                   </li> -->
                   <li class="vl-side-navigation__item vl-side-navigation__item--parent">
-                    <a class="vl-side-navigation__toggle" href="#gebruikersbeheer" data-vl-child="content-9">
+                    <a class="vl-side-navigation__toggle" href="#leidinggevendenbeheer" data-vl-child="content-10">
+                      Leidinggevendenbeheer
+                      <i class="vl-vi vl-vi-arrow-right-fat"></i>
+                    </a>
+                  </li>
+                  <li class="vl-side-navigation__item vl-side-navigation__item--parent">
+                    <a class="vl-side-navigation__toggle" href="#gebruikersbeheer" data-vl-child="content-11">
                       Gebruikersbeheer
                       <i class="vl-vi vl-vi-arrow-right-fat"></i>
                     </a>
                   </li>
 <!--                   <li class="vl-side-navigation__item vl-side-navigation__item--parent">
-                    <a class="vl-side-navigation__toggle" href="#tipstricks" data-vl-child="content-10">
+                    <a class="vl-side-navigation__toggle" href="#tipstricks" data-vl-child="content-11">
                       Handige tips &amp; tricks
                       <i class="vl-vi vl-vi-arrow-right-fat"></i>
                     </a>
@@ -493,443 +501,12 @@
             <!-- --------------------------------- Toezicht ------------------------------------------------------------------>
             <section id="toezicht" class="vl-region">
               <h2 class="vl-title--h2">Toezicht</h2>
-              <p>Toezicht laat u momenteel – afhankelijk van uw type bestuur – toe de inzendingsplichtige besluiten over te maken aan het Agentschap voor Binnenlands Bestuur.</p>
-              <p>Niet-inzendingsplichtige besluiten hoeft u uiteraard niet in te zenden.</p>
-
-              <div id="toezicht-verplicht">
-                <h3 class="vl-title--h3">Inzendingsplichtige besluiten per bestuur</h3>
-                <table class="vl-data-table vl-data-table--lined vl-data-table--zebra vl-data-table--tight">
-                  <thead>
-                    <tr>
-                      <th></th>
-                      <th><p><small>Gemeente</small></p></th>
-                      <th><p><small>District</small></p></th>
-                      <th><p><small>Provincie</small></p></th>
-                      <th><p><small>OCMW</small></p></th>
-                      <th><p><small>OCMW-<br>vereniging</small></p></th>
-                      <th><p><small>AGB</small></p></th>
-                      <th><p><small>APB</small></p></th>
-                      <th><p><small>IGS</small></p></th>
-                      <th><p><small>Politie- en<br>Hulpverleningzone</small></p></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>Aangaan lening</th>
-                      <td></td>
-                      <td></td>
-                      <td>x</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Advies samenvoeging eredienstbesturen</th>
-                      <td>x</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Andere opgevraagde documenten BBC-beleidsrapporten</th>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Belasting of retributie</th>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td></td>
-                      <td></td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Besluit i.v.m. finaniceel document eredienstbestuur</th>
-                      <td>x</td>
-                      <td></td>
-                      <td>x</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Besluit over budget(wijziging) AGB x Besluit over budget(wijziging) AGB</th>
-                      <td>x</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Besluit over budget(wijziging) OCMW</th>
-                      <td>x</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Besluit over budget(wijziging) OCMW-vereniging</th>
-                      <td>x</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Besluit over jaarrekening AGB x Besluit over jaarrekening AGB</th>
-                      <td>x</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Besluit over jaarrekening OCMW x Besluit over jaarrekening OCMW</th>
-                      <td>x</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Besluit over jaarrekening OCMWvereniging</th>
-                      <td>x</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Besluit over meerjarenplan(aanpassing) AGB</th>
-                      <td>x</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Besluit over meerjarenplan(aanpassing) OCMW</th>
-                      <td>x</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Besluit over meerjarenplan(aanpassing) OCMWvereniging</th>
-                      <td>x</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Besluit overruling betaling</th>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Besluit overruling visum</th>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Besluitenlijst</th>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                    </tr>
-                    <tr>
-                      <th>Budget (wijziging)</th>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Dwingende en onvoorziene kosten</th>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Herschikking leningen</th>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Jaarrekening</th>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Lening ter sanering financiën</th>
-                      <td>x</td>
-                      <td>x</td>
-                      <td></td>
-                      <td>x</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Meerjarenplan (wijziging)</th>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Notulen</th>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td>x</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Oprichting autonoom bedrijf</th>
-                      <td>x</td>
-                      <td></td>
-                      <td>x</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Oprichting districtsbestuur</th>
-                      <td>x</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Oprichting intergemeentelijke samenwerking</th>
-                      <td>x</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Oprichting ocmw-vereniging</th>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td>x</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Oprichting van of deelname in EVA</th>
-                      <td>x</td>
-                      <td></td>
-                      <td>x</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Rechtspositieregeling</th>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Toetreding tot andere rechtspersoon</th>
-                      <td></td>
-                      <td></td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td></td>
-                      <td>x</td>
-                      <td>x</td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Wijziging statuten autonoom bedrijf</th>
-                      <td>x</td>
-                      <td></td>
-                      <td>x</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Wijziging statuten IGS</th>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td>x</td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>Wijziging statuten ocmw-vereniging</th>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td>x</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- TODO: aanpassen 1 januari -->
+              <p>De module toezicht laat u toe om – afhankelijk van het type bestuur – stukken over te maken aan het Agentschap Binnenlands Bestuur i.k.v. de meldingsplicht.</p>
+              <p>Stukken of besluiten die u niet terug vindt in de keuzelijsten hoeft u niet te melden aan de toezichthoudende overheid.</p>
 
               <div id="toezicht-locatie">
                 <h3 class="vl-title--h3">Locatie</h3>
-                <p>U kan via de zijbalk of het kaartje naar het onderdeel toezicht navigeren. <strong>Hier kunnen inzendingsplichtige besluiten en besluitenlijsten elektronisch bezorgd worden aan de toezichthoudende overheid.</strong> Vanaf 2019 kunnen de meldingsplichtige besluiten en besluitenlijsten hier gemeld worden.</p>
+                <p>U kan via de zijbalk of het kaartje naar het onderdeel toezicht navigeren. <strong>Hier kunt u stukken melden aan de toezichthoudende overheid.</strong></p>
                 <img src="img/overzicht/overzicht-uitgezoomd-toezicht.png" class="cus-manual__picture cus-u-spacer--large">
               </div>
 
@@ -955,14 +532,33 @@
               <div id="toezicht-aanleveren">
                 <h3 class="vl-title--h3">Een dossier aanleveren</h3>
                 <p>Via de knop rechts <strong>Lever nieuw dossier aan</strong> kan u een type besluit of besluitenlijst versturen.</p>
-                <img src="img/toezicht/toezicht-1-nieuw.png" class="cus-manual__picture cus-u-spacer--large">
+                <img src="img/toezicht/toezicht-1-nieuw-bestuursperiode-1.png" class="cus-manual__picture cus-u-spacer--large">
 
-                <p>Bij het veld <strong>Type dossier</strong> kan u kiezen tussen het aanleveren van verschillende soorten besluiten of een besluitenlijst. U kan scrollen doorheen de lijst, of typen in het zoekveld om het type dossier te vinden.</p>
+                <p>Eerst kiest u voor <strong>welke bestuursperiode</strong> u een dossier wil inzenden. Voor documenten die nog in de vorige bestuursperiode kan indienen, kiest u "In voege tot en met 02/01/2019". Voor documenten die nog in de nieuwe bestuurspeiode kan indienen, kiest u "In voege vanaf 01/01/2019".</p>
+                <div class="vl-grid">
+                  <div class="vl-col--6-12 vl-col--1-1--s">
+                		<img src="img/toezicht/toezicht-1-nieuw-bestuursperiode-2.png" class="cus-manual__picture cus-u-spacer--large">
+                  </div>
+                  <div class="vl-col--6-12 vl-col--1-1--s">
+                		<img src="img/toezicht/toezicht-1-nieuw-bestuursperiode-3.png" class="cus-manual__picture cus-u-spacer--large">
+                  </div>
+                </div>
+
+                <p>Als volgt kan u bij het veld <strong>Type dossier</strong> kiezen tussen het aanleveren van dossiers. U kan scrollen doorheen de lijst, of typen in het zoekveld om het type dossier te vinden.</p>
                 <img src="img/toezicht/toezicht-2-dropdown.png" class="cus-manual__picture cus-u-spacer--large">
+
+                <div class="vl-grid">
+                  <div class="vl-col--6-12 vl-col--1-1--s">
+                  	<p>Een formulier verschijnt. Vul al de verplichte velden in, en klik dan op "verstuur".</p>
+                  </div>
+                  <div class="vl-col--6-12 vl-col--1-1--s">
+                    <img src="img/toezicht/toezicht-2-dropdown-result.png" class="cus-manual__picture cus-u-spacer--large">
+                  </div>
+                </div>
               </div>
 
               <div id="toezicht-verplichtevelden">
-                <h4 class="vl-title--h5">Verplichte velden</h3>
+                <h4 class="vl-title--h5">Verplichte velden</h4>
                 <div class="vl-grid">
                   <div class="vl-col--6-12 vl-col--1-1--s">
                     <p>Afhankelijk van het type dossier dat u kiest, krijgt u andere velden om in te vullen. De velden die verplicht zijn:</p>
@@ -972,18 +568,29 @@
                       <li>Type dossier</li>
                       <li>Welk beslissingsorgaan nam het besluit?</li>
                       <li>Datum zitting/besluit</li>
+                      <li>Datum publicatie</li>
                       <li>Soort Belasting (staat niet in elk formulier)</li>
                       <li>Naam betreffend bedrijf/bestuur (staat niet in elk formulier)</li>
                       <li>Datum besluit betreffend bedrijf/bestuur (staat niet in elk formulier)</li>
                       <li>Rapportjaar (staat niet in elk formulier)</li>
-                      <li>Bijlage (Een bijlage kan maximaal 1024 mb zijn. Gebruik best geen .zip, .exe of .rar bestanden.)</li>
+                      <li>URL of Bijlage (Een bijlage kan maximaal 1024 mb zijn. Gebruik best geen .zip, .exe of .rar bestanden.)</li>
                     </ul>
                   </div>
                 </div>
-              </h4>
+              </div>
 
-              <div id="toezicht-voorbeeld-specifiek">
+<!--               <div id="toezicht-voorbeeld-specifiek">
                 <h4 class="vl-title--h4 vl-title--alt vl-u-spacer">Voorbeeld specifiek besluit</h4>
+                <div class="vl-grid">
+                  <div class="vl-col--6-12 vl-col--1-1--s">
+                    <p><strong>Voorbeeld specifiek besluit: kies bij Type dossier het besluit dat u wil insturen.</strong></p>
+                    <img src="img/toezicht/toezicht-4-belasting-retributie-b.png" class="cus-manual__picture cus-u-spacer--large">
+                  </div>
+                  <div class="vl-col--6-12 vl-col--1-1--s">
+                    <p>Als voorbeeld nemen we <strong>Belasting of retributie</strong>.</p>
+                    <img src="img/toezicht/toezicht-4-1-belasting-retributie-nieuw.png" class="cus-manual__picture cus-u-spacer--large">
+                  </div>
+                </div>
                 <div class="vl-grid">
                   <div class="vl-col--6-12 vl-col--1-1--s">
                     <p><strong>Voorbeeld specifiek besluit: kies bij Type dossier het besluit dat u wil insturen.</strong></p>
@@ -1054,37 +661,15 @@
                     <img src="img/toezicht/toezicht-4-15-belasting-retributie-bijlage-notitle.png" class="cus-manual__picture cus-u-spacer--large">
                   </div>
                 </div>
-              </div>
+              </div> -->
+            </section>
 
-              <div id="toezicht-voorbeeld-besluitenlijst">
-                <h4 class="vl-title--h4 vl-title--alt vl-u-spacer">Voorbeeld besluitenlijst</h4>
-                <div class="vl-grid vl-u-spacer">
-                  <div class="vl-col--1-1">
-                    <p><strong>Voorbeeld besluitenlijst: kies bij Type dossier besluitenlijst.</strong></p>
-                  </div>
-                  <div class="vl-col--6-12 vl-col--1-1--s">
-                    <img src="img/toezicht/toezicht-3-besluitenlijst-b.png" class="cus-manual__picture">
-                  </div>
-                  <div class="vl-col--6-12 vl-col--1-1--s">
-                    <img src="img/toezicht/toezicht-4-1-besluitenlijst-orgaan-notitle-b.png" class="cus-manual__picture">
-                  </div>
-                  <div class="vl-col--6-12 vl-col--1-1--s">
-                    <p><strong>Voorbeeld besluitenlijst: orgaan</strong></p>
-                    <p>Afhankelijk van het bestuur waarvoor u heeft aangemeld, kan u een orgaan kiezen. Bent u aangemeld als gemeente, dan kan u enkel de bestuursorganen van een gemeentebestuur selecteren, bent u aangemeld als O.C.M.W., dan kan u enkel de bestuursorganen van een O.C.M.W. selecteren. Dit is een verplicht veld.</p>
-                    <img src="img/toezicht/toezicht-4-2-besluitenlijst-orgaan-dropdown-notitle-b.png" class="cus-manual__picture cus-u-spacer--large">
-                  </div>
-                  <div class="vl-col--6-12 vl-col--1-1--s">
-                    <p><strong>Voorbeeld besluitenlijst: datum</strong></p>
-                    <p>De datum van de besluitenlijst waarover deze beslissing gaat kan u invullen door te typen, of de datepicker te doorklikken. Dit is een verplicht veld.</p>
-                    <img src="img/toezicht/toezicht-4-4-besluitenlijst-date-notitle.png" class="cus-manual__picture cus-u-spacer--large">
-                  </div>
-                  <div class="vl-col--6-12 vl-col--1-1--s">
-                    <p><strong>Voorbeeld besluitenlijst: bijlage</strong></p>
-                    <p>Bijlagen zijn verplicht. Zonder een bestand toe te voegen, kan u niets versturen.</p>
-                    <img src="img/toezicht/toezicht-4-7-besluitenlijst-attachment-notitle.png" class="cus-manual__picture cus-u-spacer--large">
-                  </div>
-                </div>
-              </div>
+            <div class="vl-u-hr"></div>
+
+            <!-- --------------------------------- Gebruikersbeheer ---------------------------------------------------------->
+            <section id="berichtencentrum" class="vl-region">
+              <h2 class="vl-title--h2">Berichtencentrum</h2>
+              <p>De handleiding wordt spoedig aangevuld.</p>
             </section>
 
             <div class="vl-u-hr"></div>
@@ -2253,6 +1838,12 @@
             </section>
 
             <div class="vl-u-hr"></div> -->
+
+            <!-- --------------------------------- Gebruikersbeheer ---------------------------------------------------------->
+            <section id="leidinggevendenbeheer" class="vl-region">
+              <h2 class="vl-title--h2">Leidinggevendenbeheer</h2>
+              <p>De handleiding wordt spoedig aangevuld.</p>
+            </section>
 
             <!-- --------------------------------- Gebruikersbeheer ---------------------------------------------------------->
             <section id="gebruikersbeheer" class="vl-region">
