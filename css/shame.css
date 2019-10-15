@@ -107,3 +107,14 @@ em {
 a {
   cursor: hand;
 }
+
+
+@media print {
+	.cus-container--table-of-contents {
+		display: none;
+	}
+
+	.cus-container--table-of-contents--small {
+		display: block;
+	}
+}
