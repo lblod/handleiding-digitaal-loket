@@ -111,10 +111,13 @@
                     <div><a href="#toezicht-overzicht" aria-label="Navigeer naar toezicht overzicht">Overzicht &amp; bekijken</a></div>
                   </li>
                   <li class="vl-side-navigation__item">
-                    <div><a href="#toezicht-aanleveren" aria-label="Navigeer naar toezicht dossier aanleveren">Een dossier aanleveren</a></div>
+                    <div><a href="#toezicht-aanleveren" aria-label="Navigeer naar toezicht dossier aanleveren">Een nieuwe melding maken</a></div>
                   </li>
                   <li class="vl-side-navigation__item">
                     <div><a href="#toezicht-verplichtevelden" aria-label="Navigeer naar toezicht verplichte velden">Verplichte velden</a></div>
+                  </li>
+                  <li class="vl-side-navigation__item">
+                    <div><a href="#toezicht-wijziging" aria-label="Navigeer naar toezicht een wijziging doorvoeren">Een wijziging doorvoeren</a></div>
                   </li>
                 </ul>
               </li>
@@ -148,7 +151,7 @@
                     <div><a href="#bbcdr-overzicht" aria-label="Navigeer naar beleids- en beheerscyclus overzicht">Overzicht &amp; bekijken</a></div>
                   </li>
                   <li class="vl-side-navigation__item">
-                    <div><a href="#bbcdr-aanleveren" aria-label="Navigeer naar beleids- en beheerscyclus dossier aanleveren">Een dossier aanleveren</a></div>
+                    <div><a href="#bbcdr-aanleveren" aria-label="Navigeer naar beleids- en beheerscyclus dossier aanleveren">Een nieuwe melding maken</a></div>
                   </li>
                 </ul>
               </li>
@@ -317,10 +320,13 @@
                         <div><a href="#toezicht-overzicht" data-vl-parent="content-3" aria-label="Navigeer naar onderdeel toezicht overzicht">Overzicht &amp; bekijken</a></div>
                       </li>
                       <li class="vl-side-navigation__item">
-                        <div><a href="#toezicht-aanleveren" data-vl-parent="content-3" aria-label="Navigeer naar onderdeel toezicht dossier aanleveren">Een dossier aanleveren</a></div>
+                        <div><a href="#toezicht-aanleveren" data-vl-parent="content-3" aria-label="Navigeer naar onderdeel toezicht dossier aanleveren">Een nieuwe melding maken</a></div>
                       </li>
                       <li class="vl-side-navigation__item">
                         <div><a href="#toezicht-verplichtevelden" data-vl-parent="content-3" aria-label="Navigeer naar onderdeel toezicht verplichte velden">Verplichte velden</a></div>
+                      </li>
+                      <li class="vl-side-navigation__item">
+                        <div><a href="#toezicht-wijziging" data-vl-parent="content-3" aria-label="Navigeer naar onderdeel toezicht een wijziging doorvoeren">Een wijziging doorvoeren</a></div>
                       </li>
                     </ul>
                   </li>
@@ -366,7 +372,7 @@
                         <div><a href="#bbcdr-overzicht" data-vl-parent="content-5" aria-label="Navigeer naar onderdeel beleids- en beheerscyclus overzicht">Overzicht &amp; bekijken</a></div>
                       </li>
                       <li class="vl-side-navigation__item">
-                        <div><a href="#bbcdr-aanleveren" data-vl-parent="content-5" aria-label="Navigeer naar onderdeel beleids- en beheerscyclus dossier aanleveren">Een dossier aanleveren</a></div>
+                        <div><a href="#bbcdr-aanleveren" data-vl-parent="content-5" aria-label="Navigeer naar onderdeel beleids- en beheerscyclus dossier aanleveren">Een nieuwe melding maken</a></div>
                       </li>
                     </ul>
                   </li>
@@ -567,33 +573,55 @@
               </ul>
 
               <article id="aanmelden-bestuurseenheid">
-	              <div class="vl-grid">
-	                <div class="vl-col--6-12 vl-col--1-1--s">
-		                <img class="cus-manual__picture cus-u-spacer--large" src="img/login/login-orgaan.png" alt="">
-		              </div>
-	                <div class="vl-col--6-12 vl-col--1-1--s">
-		                <h3 class="vl-title--h3">Kiezen van een bestuurseenheid</h3>
-		                <p>Indien u toegang heeft tot meerdere bestuurseenheden, krijgt u in de pop-up de optie om een bestuurseenheid te kiezen.</p>
-		              </div>
-		            </div>
+                <div class="vl-grid">
+                  <div class="vl-col--6-12 vl-col--1-1--s">
+                    <img class="cus-manual__picture cus-u-spacer--large" src="img/login/login-orgaan.png" alt="">
+                  </div>
+                  <div class="vl-col--6-12 vl-col--1-1--s">
+                    <h3 class="vl-title--h3">Kiezen van een bestuurseenheid</h3>
+                    <p>Indien u toegang heeft tot meerdere bestuurseenheden, krijgt u in de pop-up de optie om een bestuurseenheid te kiezen.</p>
+                  </div>
+                </div>
+              </article>
+
+              <article id="aanmelden-bestuurseenheid">
+                <div class="vl-grid">
+                  <div class="vl-col--1-1">
+                    <p>Na het kiezen van een bestuurseenheid, bent u ingelogd. <br>De applicatie ziet er zo uit:</p>
+                    <img class="cus-manual__picture cus-u-spacer--large" src="img/login/startscherm.png" alt="">
+                  </div>
+                </div>
               </article>
 
               <article id="wisselen-bestuurseenheid">
-                <h3 class="vl-title--h3">Wisselen van bestuurseenheid</h3>
-                <p>Indien u toegang heeft tot meerdere bestuurseenheden, kan u wisselen van bestuurseenheid door linksboven op uw bestuurseenheid te klikken.</p>
-                <img class="cus-manual__picture cus-u-spacer--large" src="img/login/bestuurseenheid-switch.png" alt="">
-                <p>U krijgt daar de optie om u af te melden, of om ervoor te kiezen om te wisselen van bestuur.</p>
-                <img class="cus-manual__picture cus-u-spacer--large" src="img/login/bestuurseenheid-switch-dropdown.png" alt="">
+                <h3 class="vl-title--h3">Wisselen van bestuurseenheid en afmelden</h3>
+                <div class="vl-grid">
+                  <div class="vl-col--6-12 vl-col--1-1--s">
+                    <p>Indien u toegang heeft tot meerdere bestuurseenheden, kan u wisselen van bestuurseenheid door rechtsboven op uw bestuurseenheid te klikken.</p>
+                  </div>
+                  <div class="vl-col--6-12 vl-col--1-1--s">
+                    <p>U krijgt daar de optie om u af te melden, of om ervoor te kiezen om te wisselen van bestuur.</p>
+                  </div>
+                </div>
+                <div class="vl-grid">
+                  <div class="vl-col--6-12 vl-col--1-1--s">
+                    <img class="cus-manual__picture cus-u-spacer--large" src="img/login/bestuurseenheid-switch-small.png" alt="">
+                  </div>
+                  <div class="vl-col--6-12 vl-col--1-1--s">
+                    <img class="cus-manual__picture cus-u-spacer--large" src="img/login/bestuurseenheid-switch-dropdown-small.png" alt="">
+                  </div>
+                </div>
+
                 <p>U krijgt dan opnieuw de pop-up te zien waar u eerst selecteert dat u zich wil aanmelden voor een lokaal of provinciaal bestuur. <strong>Zorg ervoor dat uw browser deze pop-up ook toestaat.</strong> <a href="#popup">Bekijk hoe u popups toestaat</a></p>
                 <p>Vervolgens kiest u de juiste bestuurseenheid.</p>
-	              <div class="vl-grid">
-	                <div class="vl-col--6-12 vl-col--1-1--s">
-	                  <img class="cus-manual__picture cus-u-spacer--large" src="img/login/wissel-1-kies-bestuur.png" alt="">
-	                </div>
-	                <div class="vl-col--6-12 vl-col--1-1--s">
-	                  <img class="cus-manual__picture cus-u-spacer--large" src="img/login/wissel-2-wisselen.png" alt="">
-	                </div>
-	              </div>
+                <div class="vl-grid">
+                  <div class="vl-col--6-12 vl-col--1-1--s">
+                    <img class="cus-manual__picture cus-u-spacer--large" src="img/login/wissel-1-kies-bestuur.png" alt="">
+                  </div>
+                  <div class="vl-col--6-12 vl-col--1-1--s">
+                    <img class="cus-manual__picture cus-u-spacer--large" src="img/login/wissel-2-wisselen.png" alt="">
+                  </div>
+                </div>
               </article>
 
               <h3 class="vl-title--h3">Probleem</h3>
@@ -606,7 +634,7 @@
             <section id="overzicht" class="vl-region">
               <h2 class="vl-title--h2">Overzicht</h2>
               <p>Eens u aangemeld bent, krijgt u een overzicht van al de onderdelen waar u toegang tot heeft in het loket. Klik op de knoppen in een van de kaartjes, of navigeer via de linkerzijbalk naar het juiste onderdeel.</p>
-              <img src="img/overzicht/overzicht-uitgezoomd.png" class="cus-manual__picture cus-u-spacer--large" alt="">
+              <img src="img/login/startscherm.png" class="cus-manual__picture cus-u-spacer--large" alt="">
               <p>Indien u toegang wil aanvragen tot bepaalde onderdelen van het loket, neem contact op met uw lokale beheerder Indien er zich een probleem voordoet, bekijk de mogelijke problemen en hun oplossingen op <a href="https://overheid.vlaanderen.be/ict/ict-diensten/gebruikersbeheer" target="_blank" rel="noopener">gebruikersbeheer Vlaanderen</a>. Vindt u daar het antwoord niet, neem contact op met 1700.</p>
             </section>
 
@@ -621,55 +649,35 @@
               <div id="toezicht-locatie">
                 <h3 class="vl-title--h3">Locatie</h3>
                 <p>U kan via de zijbalk of het kaartje naar het onderdeel toezicht navigeren. <strong>Hier kunt u stukken melden aan de toezichthoudende overheid.</strong></p>
-                <img src="img/overzicht/overzicht-uitgezoomd-toezicht.png" class="cus-manual__picture cus-u-spacer--large" alt="">
+                <img src="img/navigatie/navigatie-overzicht-toezicht.png" class="cus-manual__picture cus-u-spacer--large" alt="">
               </div>
 
               <div id="toezicht-overzicht">
                 <h3 class="vl-title--h3">Overzicht &amp; bekijken</h3>
-                <p>In eerste instantie zal uw overzicht leeg zijn. Concepten en verstuurde dossiers komen in dit overzicht terecht. U kan een dossier aanleveren door op de knop <strong>Lever nieuw dossier aan</strong> te klikken.</p>
-                <!-- TODO UITKLAREN MET ABB: De dossiers die u voorheen heeft gestuurd, kan u nog opvragen via... -->
-                <img src="img/toezicht/toezicht-0-overzicht-empty-full.png" class="cus-u-spacer--large" alt="">
+                <p>In eerste instantie zal uw overzicht leeg zijn. Concepten en verstuurde dossiers komen in dit overzicht terecht. U kan een nieuwe melding maken door op de knop <strong>Maak nieuwe melding</strong> te klikken.</p>
+                <img src="img/toezicht/toezicht-0-0-overzicht-empty.png" class="cus-u-spacer--large cus-manual__picture" alt="">
+
                 <h4 class="vl-title--h5">Bekijken</h4>
                 <p>U kan de details van een dossier bekijken door op <strong>Bekijk</strong> te klikken. U krijgt extra informatie zoals degene die het gewijzigd heeft, en wanneer het dossier al dan niet verstuurd werd.</p>
-                <div class="vl-grid">
-                  <div class="vl-col--6-12 vl-col--1-1--s">
-                    Een verstuurd dossier kan enkel bekeken worden. U kan de bijlagen wel downloaden, maar niet aanpassen of verwijderen.
-                    <img src="img/toezicht/toezicht-0-3-overzicht-verstuurd-bekijk-besluitenlijst-b.png" class="cus-manual__picture cus-u-spacer--large"  alt="">
-                  </div>
-                  <div class="vl-col--6-12 vl-col--1-1--s">
-                    Een concept kan bewerkt, verwijderd of verstuurd worden.
-                    <img src="img/toezicht/toezicht-0-2-overzicht-concept-bekijk-belasting-b.png" class="cus-manual__picture cus-u-spacer--large"  alt="">
-                  </div>
-                </div>
+                <img src="img/toezicht/toezicht-0-0-overzicht-full.png" class="cus-u-spacer--large cus-manual__picture" alt="">
               </div>
 
               <div id="toezicht-aanleveren">
-                <h3 class="vl-title--h3">Een dossier aanleveren</h3>
-                <p>Via de knop rechts <strong>Lever nieuw dossier aan</strong> kan u een type besluit of besluitenlijst versturen.</p>
-                <img src="img/toezicht/toezicht-1-nieuw-bestuursperiode-1.png" class="cus-manual__picture cus-u-spacer--large" alt="">
+                <h3 class="vl-title--h3">Een nieuwe melding maken</h3>
+                <p>Via de knop rechts <strong>Maak nieuwe melding</strong> kan u een type besluit of besluitenlijst versturen.</p>
+                <img src="img/toezicht/toezicht-0-0-overzicht-empty.png" class="cus-u-spacer--large cus-manual__picture" alt="">
 
-                <p>Eerst kiest u voor <strong>welke bestuursperiode</strong> u een dossier wil inzenden. Voor documenten die nog in de vorige bestuursperiode kan indienen, kiest u "In voege tot en met 02/01/2019". Voor documenten die nog in de nieuwe bestuurspeiode kan indienen, kiest u "In voege vanaf 01/01/2019".</p>
-                <div class="vl-grid">
-                  <div class="vl-col--6-12 vl-col--1-1--s">
-                		<img src="img/toezicht/toezicht-1-nieuw-bestuursperiode-2.png" class="cus-manual__picture cus-u-spacer--large" alt="">
-                  </div>
-                  <div class="vl-col--6-12 vl-col--1-1--s">
-                		<img src="img/toezicht/toezicht-1-nieuw-bestuursperiode-3.png" class="cus-manual__picture cus-u-spacer--large" alt="">
-                  </div>
-                </div>
-
-                <p>Als volgt kan u bij het veld <strong>Type dossier</strong> kiezen tussen het aanleveren van dossiers. U kan scrollen doorheen de lijst, of typen in het zoekveld om het type dossier te vinden.</p>
-                <img src="img/toezicht/toezicht-2-dropdown.png" class="cus-manual__picture cus-u-spacer--large" alt="">
+                <p>Eerst kan u bij het veld <strong>Type dossier</strong> kiezen tussen het aanleveren van dossiers. U kan scrollen doorheen de lijst, of typen in het zoekveld om het type dossier te vinden.</p>
+                <img src="img/toezicht/toezicht-2-1-dropdown.png" class="cus-manual__picture cus-u-spacer--large" alt="">
 
                 <div class="vl-grid">
-                  <div class="vl-col--6-12 vl-col--1-1--s">
-                  	<p>Een formulier verschijnt. Vul al de verplichte velden in, en klik dan op "verstuur".</p>
+                  <div class="vl-col--1-1">
+                  	<p>Een formulier verschijnt. Vul al de verplichte velden in, en klik dan op "verstuur". U kan tussentijds concepten bewaren.</p>
                   </div>
-                  <div class="vl-col--6-12 vl-col--1-1--s">
-                    <img src="img/toezicht/toezicht-2-dropdown-result.png" class="cus-manual__picture cus-u-spacer--large" alt="">
+                  <div class="vl-col--1-1">
+                    <img src="img/toezicht/toezicht-2-2-dropdown-result.png" class="cus-manual__picture cus-u-spacer--large" alt="">
                   </div>
                 </div>
-              </div>
 
               <div id="toezicht-verplichtevelden">
                 <h4 class="vl-title--h5">Verplichte velden</h4>
@@ -691,6 +699,21 @@
                     </ul>
                   </div>
                 </div>
+              </div>
+
+              <div id="toezicht-wijziging">
+                <h4 class="vl-title--h5">Een wijziging doorvoeren</h4>
+                <div class="vl-grid">
+                  <div class="vl-col--1-1">
+                    <p>Een verstuurd dossier kan enkel bekeken worden. U kan de bijlagen wel downloaden, maar niet aanpassen of verwijderen. Indien u een fout hebt gemaakt, maakt u een nieuwe melding en verstuurt u het dossier opnieuw.</p>
+                    <img src="img/toezicht/toezicht-4-1-verstuurd.png" class="cus-manual__picture cus-u-spacer--large"  alt="">
+                  </div>
+                  <div class="vl-col--1-1">
+                    <p>Een concept kan bewerkt worden en bewaard, verstuurd of verwijderd.</p>
+                    <img src="img/toezicht/toezicht-2-3-dropdown-result-ingevuld-bewerk.png" class="cus-manual__picture cus-u-spacer--large"  alt="">
+                  </div>
+                </div>
+              </div>
               </div>
             </section>
 
@@ -714,12 +737,12 @@
               <div id="berichtencentrum-locatie">
                 <h3 class="vl-title--h3">Locatie</h3>
                 <p>U kan via de zijbalk of via het kaartje naar het berichtencentrum navigeren.</p>
-                <img src="img/overzicht/overzicht-uitgezoomd-berichtencentrum.png" class="cus-manual__picture cus-u-spacer--large" alt="">
+                <img src="img/navigatie/navigatie-overzicht-berichtencentrum.png" class="cus-manual__picture cus-u-spacer--large" alt="">
               </div>
 
               <div id="berichtencentrum-overzicht">
                 <h3 class="vl-title--h3">Overzicht en Bekijken</h3>
-              	<p>In eerste instantie zal uw overzicht leeg zijn. Gestuurde en ontvangen communicaties komen in dit overzicht terecht. Per dossier bij de toezichthoudende overheid (bv. de behandeling van een klacht), zal u een lijn zien in uw overzicht. In uw overzicht ziet u per dossier wie het laatste bericht heeft verstuurd en op welke datum dit gebeurde.</p>
+              	<p>In eerste instantie zal uw overzicht leeg zijn. Gestuurde en ontvangen communicaties komen in dit overzicht terecht. Per dossier bij de toezichthoudende overheid (bv. de behandeling van een klacht), zal u een rij zien in uw overzicht. In uw overzicht ziet u per dossier wie het laatste bericht heeft verstuurd en op welke datum dit gebeurde.</p>
               	<p>Klik op een van de hoofdingen in de tabel om te sorteren per kolom. Een pijltje zal verschijnen met de richting.</p>
               	<img src="img/berichtencentrum/berichtcentr-1-0-overzicht.png" class="cus-manual__picture cus-u-spacer--large" alt="">
                 <h4 class="vl-title--h4 vl-u-spacer">Bekijken</h4>
@@ -740,14 +763,16 @@
                 <div class="vl-grid">
                   <div class="vl-col--6-12 vl-col--1-1--s">
                   	<p>Klik op <strong>Bekijk</strong> om de zijbalk te openen, en scroll naar beneden.</p>
+                    <p>Klik vervolgens op <strong>Plaats reactie</strong> om een nieuw bericht te versturen.</p>
               			<img src="img/berichtencentrum/berichtcentr-1-2-overzicht-bekijk-scroll.png" class="cus-manual__picture cus-u-spacer--large" alt="">
                   </div>
                   <div class="vl-col--6-12 vl-col--1-1--s">
-                  	<p>Klik vervolgens op <strong>Plaats reactie</strong> om een nieuw bericht te versturen.</p>
+                    <p>Voeg de bestanden toe die van toepassing zijn. Deze zijn gelimiteerd tot tekstbestanden zoals Word-documenten en PDF.</p>
+                    <!-- Todo: voeg limitatie toe in grootte -->
               			<img src="img/berichtencentrum/berichtcentr-1-3-overzicht-bekijk-nieuw.png" class="cus-manual__picture cus-u-spacer--large" alt="">
                   </div>
                   <div class="vl-col--6-12 vl-col--1-1--s">
-                  	<p>Upload de bestanden die van toepassing zijn. Deze zijn gelimiteerd tot tekstbestanden zoals Word-documenten en PDF. U kan nu op <strong>Verstuur bericht</strong> klikken.</p>
+                  	<p>Na het opladen van bestanden, kan u op <strong>Verstuur bericht</strong> klikken.</p>
               			<img src="img/berichtencentrum/berichtcentr-1-4-overzicht-bekijk-toevoegen.png" class="cus-manual__picture cus-u-spacer--large" alt="">
                   </div>
                   <div class="vl-col--6-12 vl-col--1-1--s">
@@ -768,7 +793,8 @@
                 		<p>Als u in de hoofding op <strong>Ontvang mails bij nieuwe berichten</strong> klikt, komt er een pop-up tevoorschijn. Hier kan u ingeven naar welk mailadres de notificatiemails gestuurd moeten worden.</p>
                 	</div>
                   <div class="vl-col--6-12 vl-col--1-1--s">
-		              	<img src="img/berichtencentrum/berichtcentr-2-1-mail-notifications-popup.png" class="cus-manual__picture cus-u-spacer--large" alt="">
+                    <img src="img/berichtencentrum/berichtcentr-2-1-mail-notifications-popup.png" class="cus-manual__picture cus-u-spacer--large" alt="">
+                    <img src="img/berichtencentrum/berichtcentr-2-2-mail-notifications-popup.png" class="cus-manual__picture cus-u-spacer--large" alt="">
                   </div>
                 </div>
               </div>
@@ -789,7 +815,7 @@
               <div id="bbcdr-locatie">
                 <h3 class="vl-title--h3">Locatie</h3>
                 <p>U kan via de zijbalk of via het kaartje naar BBC-DR navigeren. Hier kan de Digitale Rapportering bezorgd worden aan de Vlaamse Regering.</p>
-                <img src="img/overzicht/overzicht-uitgezoomd-bbcdr.png" class="cus-manual__picture cus-u-spacer--large" alt="">
+                <img src="img/navigatie/navigatie-overzicht-bbcdr.png" class="cus-manual__picture cus-u-spacer--large" alt="">
               </div>
 
               <div id="bbcdr-overzicht">
@@ -869,7 +895,7 @@
               <div id="mandatenbeheer-locatie">
                 <h3 class="vl-title--h3">Locatie</h3>
                 <p>U kan via de zijbalk of via het kaartje naar het mandatenbeheer navigeren. Hier kan mandatendatabank beheerd worden voor de Gemeenten, Districten, Provincies en OCMW’s.</p>
-                <img src="img/overzicht/overzicht-uitgezoomd-mandatenbeheer.png" class="cus-manual__picture cus-u-spacer--large" alt="">
+                <img src="img/navigatie/navigatie-overzicht-mandatenbeheer.png" class="cus-manual__picture cus-u-spacer--large" alt="">
               </div>
 
               <div id="mandatenbeheer-hoewerkthet">
@@ -1855,7 +1881,7 @@
               <div id="leidinggevendenbeheer-locatie">
                 <h3 class="vl-title--h3">Locatie</h3>
                 <p>U kan via de zijbalk of via het kaartje naar het leidinggevendenbeheer navigeren. Hier houdt u de leidinggevende functies van uw bestuur bij.</p>
-                <img src="img/overzicht/overzicht-uitgezoomd-leidinggevendenbeheer.png" class="cus-manual__picture cus-u-spacer--large" alt="">
+                <img src="img/navigatie/navigatie-overzicht-leidinggevendenbeheer.png" class="cus-manual__picture cus-u-spacer--large" alt="">
               </div>
 
               <div id="leidinggevendenbeheer-hoewerkthet">
@@ -2028,7 +2054,7 @@
               <div id="personeelsbeheer-locatie">
                 <h3 class="vl-title--h3">Locatie</h3>
                 <p>U kan via de zijbalk of via het kaartje naar het personeelsbeheer navigeren. Hier houdt u de personeelsaantallen voor uw bestuur bij.</p>
-                <img src="img/overzicht/overzicht-uitgezoomd-personeelsbeheer.png" class="cus-manual__picture cus-u-spacer--large" alt="">
+                <img src="img/navigatie/navigatie-overzicht-personeelsbeheer.png" class="cus-manual__picture cus-u-spacer--large" alt="">
               </div>
 
               <div id="personeelsbeheer-hoewerkthet">
