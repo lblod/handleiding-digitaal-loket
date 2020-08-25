@@ -1,0 +1,30 @@
+{
+  "name": "handleiding-digitaal-loket",
+  "version": "1.0.0",
+  "description": "## Onderdelen van deze handleiding",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "@appuniversum/appuniversum": "0.0.13",
+    "browser-sync": "^2.26.12",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5"
+  },
+  "scripts": {
+    "start": "run-p server scss",
+    "scss": "node-sass _scss/screen.scss css/screen.css -w",
+    "server": "browser-sync start --server './' --files './'",
+    "build": "node-sass _scss/screen.scss css/screen.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lblod/handleiding-digitaal-loket.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lblod/handleiding-digitaal-loket/issues"
+  },
+  "homepage": "https://github.com/lblod/handleiding-digitaal-loket#readme"
+}

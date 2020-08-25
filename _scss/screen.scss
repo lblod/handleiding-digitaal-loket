@@ -1,0 +1,72 @@
+/* ==================================
+   #Appuniversum
+   ================================== */
+
+/**
+ * A design universe for Flanders GOV applications
+ */
+
+/**
+ * CONTENTS
+ * ---
+ * SETTINGS: Project settings and variables
+ * TOOLS: Mixins
+ * GENERIC: Reset, global box-sizing and font-styles
+ * ELEMENTS: Plain html tag styling
+ * OBJECTS: OOCSS unstyled objects (namespace: '.au-o-...')
+ * COMPONENTS: Components (namespace: '.au-c-...')
+ * UTILITIES: Single function helper classes (namespace: '.au-u-...')
+ * SHAME: Temporary hacks and quickfixes
+ */
+
+
+// VARIABLES
+@import "../node_modules/@appuniversum/appuniversum/appuniversum/s-colors";
+@import "../node_modules/@appuniversum/appuniversum/appuniversum/s-global";
+@import "../node_modules/@appuniversum/appuniversum/appuniversum/s-utilities";
+
+
+// // PROJECT SPECIFIC VARIABLES
+// @import "project/s-global";
+
+
+// MIXINS
+@import "../node_modules/@appuniversum/appuniversum/appuniversum/t-font-size";
+@import "../node_modules/@appuniversum/appuniversum/appuniversum/t-sass-mq";
+
+
+// // GENERIC
+@import "../node_modules/@appuniversum/appuniversum/appuniversum/g-reset";
+@import "../node_modules/@appuniversum/appuniversum/appuniversum/g-box-sizing";
+@import "../node_modules/@appuniversum/appuniversum/appuniversum/g-font";
+
+
+// // ELEMENTS
+@import "../node_modules/@appuniversum/appuniversum/appuniversum/e-page";
+
+
+// OBJECTS
+@import "../node_modules/@appuniversum/appuniversum/appuniversum/o-box";
+@import "../node_modules/@appuniversum/appuniversum/appuniversum/o-flow";
+@import "../node_modules/@appuniversum/appuniversum/appuniversum/o-grid";
+@import "../node_modules/@appuniversum/appuniversum/appuniversum/o-layout";
+@import "../node_modules/@appuniversum/appuniversum/appuniversum/o-region";
+
+// COMPONENTS
+
+
+// UTILITIES
+@import "../node_modules/@appuniversum/appuniversum/appuniversum/u-align-text";
+@import "../node_modules/@appuniversum/appuniversum/appuniversum/u-headings";
+@import "../node_modules/@appuniversum/appuniversum/appuniversum/u-font-weights";
+@import "../node_modules/@appuniversum/appuniversum/appuniversum/u-font-family";
+@import "../node_modules/@appuniversum/appuniversum/appuniversum/u-widths";
+@import "../node_modules/@appuniversum/appuniversum/appuniversum/u-spacings";
+@import "../node_modules/@appuniversum/appuniversum/appuniversum/u-responsive-spacings";
+@import "../node_modules/@appuniversum/appuniversum/appuniversum/u-print";
+@import "../node_modules/@appuniversum/appuniversum/appuniversum/u-hide";
+@import "../node_modules/@appuniversum/appuniversum/appuniversum/u-visible";
+
+
+// TEMPORARY HACKS AND QUICKFIXES
+@import 'shame';
