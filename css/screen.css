@@ -1066,46 +1066,46 @@ body {
    ========================================================================== */
 /* Component
    ========================================================================== */
-.au-c-content {
+.au-c-content, .au-c-content .au-o-grid__item {
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.5; }
-  .au-c-content h1,
+  .au-c-content h1, .au-c-content .au-o-grid__item h1,
   .au-c-content .au-c-heading--1 {
     font-size: 48px;
     font-size: 4.8rem;
     line-height: 1.125;
     font-family: "flanders-serif";
     font-weight: 300; }
-  .au-c-content h2,
+  .au-c-content h2, .au-c-content .au-o-grid__item h2,
   .au-c-content .au-c-heading--2 {
     font-size: 34px;
     font-size: 3.4rem;
     line-height: 1.23529;
     font-family: "flanders-serif";
     font-weight: 300; }
-  .au-c-content h3,
+  .au-c-content h3, .au-c-content .au-o-grid__item h3,
   .au-c-content .au-c-heading--3 {
     font-size: 24px;
     font-size: 2.4rem;
     line-height: 1.25;
     font-family: "flanders-serif";
     font-weight: 500; }
-  .au-c-content h4,
+  .au-c-content h4, .au-c-content .au-o-grid__item h4,
   .au-c-content .au-c-heading--4 {
     font-size: 20px;
     font-size: 2rem;
     line-height: 1.5;
     font-family: "flanders-sans", BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-weight: 500; }
-  .au-c-content h5,
+  .au-c-content h5, .au-c-content .au-o-grid__item h5,
   .au-c-content .au-c-heading--5 {
     font-size: 18px;
     font-size: 1.8rem;
     line-height: 1.33333;
     font-family: "flanders-sans", BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-weight: 500; }
-  .au-c-content h6,
+  .au-c-content h6, .au-c-content .au-o-grid__item h6,
   .au-c-content .au-c-heading--6 {
     font-size: 16px;
     font-size: 1.6rem;
@@ -1119,17 +1119,21 @@ body {
     list-style: circle; }
   .au-c-content ul:not(.au-c-list-horizontal) li + li {
     margin-top: 0.6rem; }
-  .au-c-content > * + * {
+  .au-c-content > * + *, .au-c-content .au-o-grid__item > * + * {
     margin-top: 2.4rem; }
-  .au-c-content > * + h1,
+  .au-c-content > * + h1, .au-c-content .au-o-grid__item > * + h1,
   .au-c-content > * + h2,
-  .au-c-content > * + h3 {
+  .au-c-content .au-o-grid__item > * + h2,
+  .au-c-content > * + h3,
+  .au-c-content .au-o-grid__item > * + h3 {
     margin-top: 4.8rem; }
-  .au-c-content > * + h4,
+  .au-c-content > * + h4, .au-c-content .au-o-grid__item > * + h4,
   .au-c-content > * + h5,
-  .au-c-content > * + h6 {
+  .au-c-content .au-o-grid__item > * + h5,
+  .au-c-content > * + h6,
+  .au-c-content .au-o-grid__item > * + h6 {
     margin-top: 2.4rem; }
-  .au-c-content em {
+  .au-c-content em, .au-c-content .au-o-grid__item em {
     font-style: italic;
     color: #545961; }
 
@@ -4529,9 +4533,7 @@ body {
   /**
    * 1. Black prints faster: http://www.sanbeiji.com/archives/953
    */
-  *,
-  *:before,
-  *:after {
+  *, *:before, *:after {
     background: transparent !important;
     color: #000 !important;
     /* [1] */
@@ -4647,7 +4649,7 @@ body {
   .au-u-visible-from\@large {
     display: none !important; } }
 
-.au-c-content a {
+.au-c-content a, .au-c-content .au-o-grid__item a {
   display: inline;
   align-items: center;
   font-family: "flanders-sans", BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -4655,7 +4657,7 @@ body {
   font-weight: 400;
   text-decoration-color: #b7cfea; }
 
-.au-c-content a,
+.au-c-content a, .au-c-content .au-o-grid__item a,
 .au-c-content a:visited {
   color: #0E5EB8; }
 
@@ -4664,22 +4666,25 @@ body {
   color: #0F6FD7;
   text-decoration-color: #cfe2f7; }
 
+
 .au-c-content a:focus {
   outline: 0.2rem dashed #FFC515;
   outline-offset: 0.3rem; }
 
-.au-c-content p,
-.au-c-content li {
-  max-width: 55rem; }
+.au-c-content p, .au-c-content .au-o-grid__item p,
+.au-c-content li,
+.au-c-content .au-o-grid__item li {
+  max-width: 70ch; }
 
-.au-c-content li {
-  margin-bottom: 2rem;
-  max-width: 55rem; }
 
-.au-c-content th p {
+.au-c-content li,
+.au-c-content .au-o-grid__item li {
+  margin-bottom: 2rem; }
+
+.au-c-content th p, .au-c-content .au-o-grid__item th p {
   margin-bottom: 0; }
 
-.au-c-content table {
+.au-c-content table, .au-c-content .au-o-grid__item table {
   margin-bottom: 2rem; }
 
 .au-c-content table.vl-data-table--tight th {
@@ -4689,41 +4694,56 @@ body {
 .au-c-content table.vl-data-table--tight td {
   padding: 0.7rem; }
 
-.au-c-content > * + div,
+.au-c-content > * + div, .au-c-content .au-o-grid__item > * + div,
 .au-c-content * + img,
-.au-c-content * + .au-c-alert {
+.au-c-content .au-o-grid__item * + img,
+.au-c-content * + .au-c-alert,
+.au-c-content .au-o-grid__item * + .au-c-alert {
   margin-top: 2.4rem; }
 
 .au-c-content .au-o-grid {
   margin-top: 0 !important;
   margin-bottom: 0 !important; }
 
-.cus-manual__picture {
+.au-c-manual-picture {
   border: 0.1rem solid #E6E8EB;
-  border-radius: 4px; }
+  border-radius: 0.4rem; }
 
-.cus-u-spacer--large {
-  margin-bottom: 4rem; }
+.cus-bullet-list,
+.au-c-bullet-list {
+  list-style: disc !important;
+  margin-left: 1rem !important;
+  margin-bottom: 1rem !important; }
 
-.cus-bullet-list {
-  list-style: disc;
-  margin-left: 1rem;
-  margin-bottom: 1rem; }
-
-.cus-num-list {
-  list-style: decimal;
-  margin-left: 1rem;
-  margin-bottom: 1rem;
-  padding-left: 1rem;
-  list-style-position: initial; }
+.cus-num-list,
+.au-c-num-list {
+  list-style: decimal !important;
+  margin-left: 1rem !important;
+  margin-bottom: 1rem !important;
+  padding-left: 1rem !important;
+  list-style-position: initial !important; }
 
 .cus-num-list li,
-.cus-bullet-list li {
+.au-c-num-list li,
+.cus-bullet-list li,
+.au-c-bullet-list li {
   margin: 0;
   max-width: none; }
 
-.cus-num-list--breathe li {
+.cus-num-list--breathe li,
+.au-c-num-list--breathe li {
   margin-bottom: 2rem; }
+
+.au-c-icon-list {
+  list-style: none !important; }
+
+.au-c-icon-list__item {
+  position: relative; }
+  .au-c-icon-list__item .au-c-icon {
+    position: absolute;
+    left: -2.4rem;
+    top: .2rem;
+    color: #A1ABBA; }
 
 .vl-region {
   padding-top: 0 !important; }

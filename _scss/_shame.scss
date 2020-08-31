@@ -34,12 +34,11 @@ $au-link-secondary-active-color      : $au-gray-900 !default;
 
   p,
   li {
-    max-width: 55rem;
+    max-width: 70ch;
   }
 
   li {
     margin-bottom: 2rem;
-    max-width: 55rem;
   }
 
   th p {
@@ -70,41 +69,62 @@ $au-link-secondary-active-color      : $au-gray-900 !default;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
   }
+
+  // Extend content styles into grid items @TODO: find a less dirty solution for grids inside content area's.
+  .au-o-grid__item {
+    @extend .au-c-content;
+  }
 }
 
 // Images
-.cus-manual__picture {
+.au-c-manual-picture {
   border: .1rem solid $au-gray-200;
-  border-radius: 4px;
+  border-radius: $au-radius;
 }
 
-.cus-u-spacer--large {
-  margin-bottom: 4rem;
+.cus-bullet-list,
+.au-c-bullet-list {
+  list-style: disc !important;
+  margin-left: 1rem !important;
+  margin-bottom: 1rem !important;
 }
 
-.cus-bullet-list {
-  list-style: disc;
-  margin-left: 1rem;
-  margin-bottom: 1rem;
-}
-
-.cus-num-list {
-  list-style: decimal;
-  margin-left: 1rem;
-  margin-bottom: 1rem;
-  padding-left: 1rem;
-  list-style-position: initial;
+.cus-num-list,
+.au-c-num-list  {
+  list-style: decimal !important;
+  margin-left: 1rem !important;
+  margin-bottom: 1rem !important;
+  padding-left: 1rem !important;
+  list-style-position: initial !important;
 }
 
 
 .cus-num-list li,
-.cus-bullet-list li {
+.au-c-num-list li,
+.cus-bullet-list li,
+.au-c-bullet-list li {
   margin: 0;
   max-width: none;
 }
 
-.cus-num-list--breathe li {
+.cus-num-list--breathe li,
+.au-c-num-list--breathe li {
   margin-bottom: 2rem;
+}
+
+.au-c-icon-list {
+  list-style: none !important;
+}
+
+.au-c-icon-list__item {
+  position: relative;
+
+  .au-c-icon {
+    position: absolute;
+    left: -$au-unit;
+    top: .2rem;
+    color: $au-gray-400;
+  }
 }
 
 .vl-region {
