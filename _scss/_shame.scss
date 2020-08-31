@@ -1,13 +1,3 @@
-.cus-u-hidden--m {
-  display: none;
-}
-
-@media screen and (max-width: 767px) {
-  .cus-u-hidden--m {
-    display: block !important;
-  }
-}
-
 // Add default styles for links
 $au-link-color                       : $au-blue-700 !default;
 $au-link-hover-color                 : $au-blue-600 !default;
@@ -44,6 +34,10 @@ $au-link-secondary-active-color      : $au-gray-900 !default;
 
   p,
   li {
+    max-width: 55rem;
+  }
+
+  li {
     margin-bottom: 2rem;
     max-width: 55rem;
   }
@@ -64,13 +58,26 @@ $au-link-secondary-active-color      : $au-gray-900 !default;
   table.vl-data-table--tight td {
     padding: 0.7rem;
   }
+
+  > * + div,
+  * + img,
+  * + .au-c-alert {
+    margin-top: $au-unit;
+  }
+
+  // Fix nested grids
+  .au-o-grid {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
 }
 
 // Images
 .cus-manual__picture {
-  border: 1px solid $au-gray-200;
+  border: .1rem solid $au-gray-200;
   border-radius: 4px;
 }
+
 .cus-u-spacer--large {
   margin-bottom: 4rem;
 }
@@ -100,48 +107,6 @@ $au-link-secondary-active-color      : $au-gray-900 !default;
   margin-bottom: 2rem;
 }
 
-// Navigation
-.vl-side-navigation__item > ul {
-  padding-left: $au-unit-small;
-}
-
-.vl-side-navigation__item > ul a {
-  @include au-font-size($au-h6);
-}
-
-
 .vl-region {
   padding-top: 0 !important;
-}
-
-.vl-side-navigation__toggle,
-.vl-side-navigation__item a {
-  display: flex;
-  align-items: center;
-  font-family: $au-font;
-  transition: color $au-transition, text-decoration $au-transition;
-  font-weight: $au-regular;
-  text-decoration-color: tint($au-link-color,70);
-
-  &,
-  &:visited {
-    color: $au-link-color;
-  }
-
-  &:hover,
-  &:focus {
-    color: $au-link-hover-color;
-    text-decoration-color: tint($au-link-hover-color,80);
-  }
-
-  &:focus {
-    outline: $au-outline;
-    outline-offset: $au-unit-tiny/2;
-  }
-
-  &.js-vl-scrollspy-active {
-    color: $au-blue-900;
-    font-weight: $au-medium;
-    text-decoration: none;
-  }
 }
