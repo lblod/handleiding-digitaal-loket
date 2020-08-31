@@ -7,7 +7,7 @@ $au-link-secondary-hover-color       : $au-gray-700 !default;
 $au-link-secondary-active-color      : $au-gray-900 !default;
 
 .au-c-content {
-  a {
+  a:not(.au-c-link) {
     display: inline;
     align-items: center;
     font-family: $au-font;
@@ -16,18 +16,18 @@ $au-link-secondary-active-color      : $au-gray-900 !default;
     text-decoration-color: tint($au-link-color,70);
   }
 
-  a,
-  a:visited {
+  a:not(.au-c-link),
+  a:not(.au-c-link):visited {
     color: $au-link-color;
   }
 
-  a:hover,
-  a:focus {
+  a:not(.au-c-link):hover,
+  a:not(.au-c-link):focus {
     color: $au-link-hover-color;
     text-decoration-color: tint($au-link-hover-color,80);
   }
 
-  a:focus {
+  a:not(.au-c-link):focus {
     outline: $au-outline;
     outline-offset: $au-unit-tiny/2;
   }
@@ -70,8 +70,9 @@ $au-link-secondary-active-color      : $au-gray-900 !default;
     margin-bottom: 0 !important;
   }
 
-  // Extend content styles into grid items @TODO: find a less dirty solution for grids inside content area's.
-  .au-o-grid__item {
+  // Extend content styles into grid items and articles @TODO: find a less dirty solution for grids inside content area's.
+  .au-o-grid__item,
+  article {
     @extend .au-c-content;
   }
 }
