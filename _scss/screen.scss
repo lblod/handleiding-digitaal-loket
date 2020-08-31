@@ -87,6 +87,10 @@
 @import "ember-appuniversum/c-textarea";
 @import "ember-appuniversum/c-toolbar";
 
+// PROJECT COMPONENTS
+@import "project/c-side-navigation";
+
+
 // UTILITIES
 @import "../node_modules/@appuniversum/appuniversum/appuniversum/u-align-text";
 @import "../node_modules/@appuniversum/appuniversum/appuniversum/u-headings";

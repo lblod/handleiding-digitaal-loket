@@ -1,0 +1,222 @@
+.vl-side-navigation {
+  max-height:90vh;
+  overflow:auto
+ }
+
+@include mq($until: medium) {
+  .vl-side-navigation::-webkit-scrollbar {
+    width: 16px;
+    height: 20px
+  }
+
+  .vl-side-navigation::-webkit-scrollbar-thumb {
+    height:8px;
+    border:6px solid transparent;
+    border-radius:7px;
+    background-clip:padding-box;
+    background-color:$au-gray-200
+  }
+
+  .vl-side-navigation::-webkit-scrollbar-button {
+    display:none;
+    width:0;
+    height:0
+  }
+
+  .vl-side-navigation::-webkit-scrollbar-corner {
+    background-color:transparent
+  }
+
+  .vl-side-navigation {
+    position: relative;
+  }
+
+  // Disable sticky on mobile
+  .js-vl-sticky--viewport-top {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    min-height: auto !important;
+  }
+}
+
+.js-vl-scrollspy-mobile--active .vl-side-navigation {
+  display:block!important
+}
+
+.vl-side-navigation .js-vl-scrollspy-active {
+  color: $au-blue-900;
+  font-weight: $au-medium;
+}
+
+@media screen and (min-width:767.1px) {
+  .vl-side-navigation[data-vl-side-navigation-scrollable] {
+    max-height: none
+  }
+}
+
+.vl-side-navigation__content {
+  padding: 0 0 $au-unit-small;
+  border-bottom: .1rem solid $au-gray-200;
+  @include au-font-size($au-h6);
+
+  @include mq($until: medium) {
+    @include au-font-size($au-base);
+  }
+}
+
+.vl-side-navigation__group {
+  margin-bottom: $au-unit-small;
+  padding-top: $au-unit-small;
+  margin-top: $au-unit-small;
+  border-top: .1rem solid $au-gray-200;
+}
+
+.vl-side-navigation__group:last-child {
+  margin-bottom:0
+}
+
+.vl-side-navigation__group--has-title {
+  padding-top:3rem;
+  border-top-width:3px
+}
+
+@media screen and (max-width:767px) {
+  .vl-side-navigation__group--has-title {
+    padding-top:1.5rem
+  }
+}
+
+.vl-side-navigation__title {
+  margin-bottom: 2rem;
+  font-weight: $au-medium;
+  text-transform:uppercase
+}
+
+.vl-side-navigation__item {
+  padding-left: $au-unit-tiny;
+  padding-right: $au-unit-tiny;
+
+  & + & {
+    margin-top: $au-unit-small;
+  }
+}
+
+.vl-side-navigation__item--parent {
+  & + & {
+    margin-top: $au-unit-tiny;
+    padding-top: $au-unit-tiny;
+    border-top: .1rem dotted $au-gray-200;
+  }
+}
+
+.vl-side-navigation__item .vl-side-navigation__item {
+  padding: 0;
+}
+
+@include mq($until: medium) {
+  .vl-side-navigation__item {
+    @include au-font-size($au-base);
+  }
+}
+
+.vl-side-navigation__item> ul {
+  display: none;
+  padding-top: $au-unit-small;
+  padding-bottom: $au-unit-tiny;
+}
+
+.vl-side-navigation__toggle {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.vl-side-navigation__toggle[aria-expanded=true] .au-c-icon {
+  transform:rotate(90deg)
+}
+
+.vl-side-navigation__toggle[aria-expanded=true]+ul {
+  display: block;
+  animation:side-navigation-transition .3s
+}
+
+.vl-side-navigation__toggle .au-c-icon {
+  transition: transform .1s ease-in-out;
+}
+
+.js-vl-scrollspy__content .js-vl-scrollspy__toggle {
+  display: none;
+  cursor: pointer
+}
+
+@media screen and (max-width:767px) {
+  .js-vl-scrollspy__content .js-vl-scrollspy__toggle {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.js-vl-scrollspy__content .js-vl-scrollspy__toggle.js-vl-scrollspy__toggle--fixed {
+  position:fixed;
+  top:auto;
+  right:auto;
+  bottom:4rem;
+  left:calc(100% - 6rem);
+  height:5rem;
+  border-radius:5rem;
+  font-size:0;
+  z-index:3
+}
+
+.js-vl-scrollspy__content .js-vl-scrollspy__toggle.js-vl-scrollspy__toggle--fixed::before {
+  right: auto;
+  left: 2rem;
+  line-height: 2.7rem
+}
+
+.js-vl-scrollspy-placeholder {
+  display:none;
+  position:fixed;
+  top:auto;
+  bottom:1.5rem;
+  left:1.5rem;
+  width:calc(100% - 3rem);
+  outline:0;
+  z-index:4
+}
+
+.js-vl-scrollspy-placeholder.js-vl-scrollspy-mobile--active {
+  display: block
+}
+
+.js-vl-sticky {
+  position: relative;
+  transform:translate3d(0,0,0);
+  will-change:position,transform;
+  z-index: 2
+}
+
+.js-vl-sticky--viewport-bottom,
+.js-vl-sticky--viewport-top {
+  position: fixed
+}
+
+.js-vl-sticky--container-bottom,
+.js-vl-sticky--viewport-unbottom {
+  position: relative
+}
+
+.js-vl-sticky--placeholder {
+  position: relative;
+  width: 100%;
+  will-change: min-height;
+
+  @media screen and (max-width:767px) {
+    height:auto
+  }
+}

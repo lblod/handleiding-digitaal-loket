@@ -1,0 +1,147 @@
+.cus-u-hidden--m {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .cus-u-hidden--m {
+    display: block !important;
+  }
+}
+
+// Add default styles for links
+$au-link-color                       : $au-blue-700 !default;
+$au-link-hover-color                 : $au-blue-600 !default;
+$au-link-active-color                : $au-gray-900 !default;
+$au-link-secondary-color             : $au-gray-800 !default;
+$au-link-secondary-hover-color       : $au-gray-700 !default;
+$au-link-secondary-active-color      : $au-gray-900 !default;
+
+.au-c-content {
+  a {
+    display: inline;
+    align-items: center;
+    font-family: $au-font;
+    transition: color $au-transition, text-decoration $au-transition;
+    font-weight: $au-regular;
+    text-decoration-color: tint($au-link-color,70);
+  }
+
+  a,
+  a:visited {
+    color: $au-link-color;
+  }
+
+  a:hover,
+  a:focus {
+    color: $au-link-hover-color;
+    text-decoration-color: tint($au-link-hover-color,80);
+  }
+
+  a:focus {
+    outline: $au-outline;
+    outline-offset: $au-unit-tiny/2;
+  }
+
+  p,
+  li {
+    margin-bottom: 2rem;
+    max-width: 55rem;
+  }
+
+  th p {
+    margin-bottom: 0;
+  }
+
+  table {
+    margin-bottom: 2rem;
+  }
+
+  table.vl-data-table--tight th {
+    white-space: initial;
+  }
+
+  table.vl-data-table--tight th,
+  table.vl-data-table--tight td {
+    padding: 0.7rem;
+  }
+}
+
+// Images
+.cus-manual__picture {
+  border: 1px solid $au-gray-200;
+  border-radius: 4px;
+}
+.cus-u-spacer--large {
+  margin-bottom: 4rem;
+}
+
+.cus-bullet-list {
+  list-style: disc;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cus-num-list {
+  list-style: decimal;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  list-style-position: initial;
+}
+
+
+.cus-num-list li,
+.cus-bullet-list li {
+  margin: 0;
+  max-width: none;
+}
+
+.cus-num-list--breathe li {
+  margin-bottom: 2rem;
+}
+
+// Navigation
+.vl-side-navigation__item > ul {
+  padding-left: $au-unit-small;
+}
+
+.vl-side-navigation__item > ul a {
+  @include au-font-size($au-h6);
+}
+
+
+.vl-region {
+  padding-top: 0 !important;
+}
+
+.vl-side-navigation__toggle,
+.vl-side-navigation__item a {
+  display: flex;
+  align-items: center;
+  font-family: $au-font;
+  transition: color $au-transition, text-decoration $au-transition;
+  font-weight: $au-regular;
+  text-decoration-color: tint($au-link-color,70);
+
+  &,
+  &:visited {
+    color: $au-link-color;
+  }
+
+  &:hover,
+  &:focus {
+    color: $au-link-hover-color;
+    text-decoration-color: tint($au-link-hover-color,80);
+  }
+
+  &:focus {
+    outline: $au-outline;
+    outline-offset: $au-unit-tiny/2;
+  }
+
+  &.js-vl-scrollspy-active {
+    color: $au-blue-900;
+    font-weight: $au-medium;
+    text-decoration: none;
+  }
+}
