@@ -422,7 +422,10 @@
                           <div><a href="#subsidiebeheer-aanleveren" data-vl-parent="content-12" aria-label="Navigeer naar onderdeel subsidie aanvragen">Een nieuwe subsidie aanvragen</a></div>
                         </li>
                         <li class="vl-side-navigation__item">
-                          <div><a href="#subsidiebeheer-formulier" data-vl-parent="content-12" aria-label="Navigeer naar onderdeel subsidie formulier invullen">Het formulier invullen</a></div>
+                          <div><a href="#subsidiebeheer-formulier" data-vl-parent="content-12" aria-label="Navigeer naar onderdeel subsidie formulier invullen">Het formulier invullen en versturen</a></div>
+                        </li>
+                        <li class="vl-side-navigation__item">
+                          <div><a href="#subsidiebeheer-opvolging" data-vl-parent="content-12" aria-label="Navigeer naar onderdeel subsidie formulier invullen">Opvolging</a></div>
                         </li>
                         <li class="vl-side-navigation__item">
                           <div><a href="#subsidiebeheer-wijziging" data-vl-parent="content-12" aria-label="Navigeer naar onderdeel subsidiebeheer een wijziging doorvoeren">Een wijziging doorvoeren</a></div>
@@ -2082,6 +2085,8 @@
                 <!-- --------------------------------- Subsidiebeheer ---------------------------------------------------------- -->
                 <section id="subsidiebeheer" class="vl-region au-c-content">
                   <h2>Subsidiebeheer</h2>
+                  <p>De module subsidiebeheer laat u toe om subsidies digitaal aan te vragen en op te volgen.</p>
+                  <p>Subsidies die u niet terug vindt in de keuzelijsten zijn mogelijk nog niet digitaal beschikbaar, nog niet gestart of inmiddels afgelopen. Bekijk <a href="https://lokaalbestuur.vlaanderen.be/loket-lokaal-bestuur-module-subsidies" target="_blank" rel="noopener noreferrer">meer informatie over de subsidies</a> die je via het loket kan aanvragen.</p>
 
                   <div id="subsidiebeheer-locatie">
                     <h3>Locatie</h3>
@@ -2094,11 +2099,10 @@
 
                     <h4>Overzicht</h4>
                     <p>In eerste instantie zal uw overzicht leeg zijn. Concepten en verstuurde subsidieaanvragen komen in dit overzicht terecht. U kan een nieuwe subsidie aanvragen door op de knop <strong>Vraag nieuwe subsidie aan</strong> te klikken.</p>
-                    <img src="img/subsidies/subsidies-0-0-overzicht-empty.png" class="au-c-manual-picture" alt="">
-                    <p class="au-u-margin-bottom-large">Ontdek hier meer <a href="http://miet.be" target="_blank" rel="noopener noreferrer">informatie over de subsidieoproepen waarvoor u hier een subsidieaanvraag kan indienen</a>.</p>
+                    <img src="img/subsidies/subsidies-0-0-overzicht-empty.png" class="au-c-manual-picture au-u-margin-bottom-large" alt="">
 
                     <h4>Bekijken</h4>
-                    <p>U kan de details van uw subsidieaanvraag bekijken door op Bekijk te klikken.
+                    <p>U kan de details van uw subsidieaanvraag bekijken door op <strong>Bekijk</strong> te klikken.
                     </p>
                     <img src="img/subsidies/subsidies-0-0-overzicht-full.png" class="au-c-manual-picture" alt="">
                     <ul class="au-u-margin-bottom-large">
@@ -2110,13 +2114,11 @@
                   <div id="subsidiebeheer-aanleveren">
                     <h3>Een nieuwe subsidie aanvragen</h3>
                     <p>Via de knop rechts <strong>Vraag nieuwe subsidie</strong> kan u een nieuwe subsidie aanvragen.</p>
-                    <img src="img/subsidies/subsidies-0-0-overzicht-empty.png" class="au-c-manual-picture" alt="">
-
-                    <p class="au-u-margin-bottom-large">Ontdek hier meer <a href="http://miet.be" target="_blank" rel="noopener noreferrer">informatie over de subsidieoproepen waarvoor u hier een subsidieaanvraag kan indienen</a>.</p>
+                    <img src="img/subsidies/subsidies-0-0-overzicht-empty.png" class="au-c-manual-picture au-u-margin-bottom" alt="">
                   </div>
 
                   <div id="subsidiebeheer-formulier">
-                    <h3>Formulier invullen</h3>
+                    <h3>Het formulier invullen en versturen</h3>
                     <p class="au-u-margin-bottom">Afhankelijk van de subsidieoproep waarvoor u een aanvraag wenst in de dienen, krijgt u andere velden om in te vullen.</p>
 
                     <h4 class="au-u-margin-bottom-small" id="subsidiebeheer-formulier-aanvrager">Aanvrager</h4>
@@ -2125,9 +2127,10 @@
                     <img src="img/subsidies/subsidies-1-nieuw.png" class="au-c-manual-picture au-u-margin-bottom-large" alt="">
 
                     <h4 id="subsidiebeheer-formulier-subsidie" class="au-u-margin-bottom-small">Kies subsidie</h4>
-                    <h5>Kies eerst de subsidiemaatregel.</h5>
-                    <p>Eerst kan u bij het veld <strong>subsidiemaatregel</strong> kiezen, de soort subsidie. U kan scrollen doorheen de lijst, of typen in het zoekveld om het type dossier te vinden.</p>
-                    <img src="img/subsidies/subsidies-2-1-dropdown-1.png" class="au-c-manual-picture au-u-margin-bottom" alt="">
+                    <h5>Kies eerst de subsidiemaatregel</h5>
+                    <p>Kies de <strong>subsidiemaatregel</strong> kiezen, de soort subsidie. U kan scrollen doorheen de lijst, of typen in het zoekveld om het type dossier te vinden.</p>
+                    <img src="img/subsidies/subsidies-2-1-dropdown-1.png" class="au-c-manual-picture" alt="">
+                    <p class="au-u-margin-bottom">Bekijk <a href="https://lokaalbestuur.vlaanderen.be/loket-lokaal-bestuur-module-subsidies" target="_blank" rel="noopener noreferrer">meer informatie over de subsidies</a> die je via het loket kan aanvragen.</p>
 
                     <h5>Kies vervolgens de reeks</h5>
                     <p>Selecteer daarna de reeks, of periode, waarvoor u een subsidie wenst aan te vragen.</p>
@@ -2161,22 +2164,28 @@
 
                     <img src="img/subsidies/subsidies-3-1-betaling.png" class="au-c-manual-picture au-u-margin-bottom" alt="">
 
-                    <p class="au-u-margin-bottom-small">Vervolgens ziet u velden die specifiek zijn voor het type subsidie en de reeks die u gekozen heeft. Vul al de verplichte velden in, en klik dan op "verstuur". U kan tussentijds concepten bewaren.</p>
-                    <p>Bekijk meer <a href="http://miet.be" target="_blank" rel="noopener noreferrer">informatie over de subsidieoproepen waarvoor u hier een subsidieaanvraag kan indienen</a>, indien u hulp wil bij het invullen van deze velden.</p>
+
+                    <h4 class="au-u-margin-bottom-small" id="subsidiebeheer-formulier-specifiek">Specifieke velden</h4>
+
+                    <p class="au-u-margin-bottom-small">Vervolgens ziet u velden die specifiek zijn voor het type subsidie en de reeks die u gekozen heeft. In het voorbeeld hier onderziet u de subsidie voor Noodopvang kinderen.</p>
+                    <p>Bekijk <a href="http://miet.be" target="_blank" rel="noopener noreferrer">meer informatie over de subsidieoproepen waarvoor u hier een subsidieaanvraag kan indienen</a>, indien u hulp wil bij het invullen van deze velden.</p>
                     <img src="img/subsidies/subsidies-3-2-specifiek.png" class="au-c-manual-picture au-u-margin-bottom" alt="">
+
+
+                    <h4 class="au-u-margin-bottom-small" id="subsidiebeheer-formulier-versturen">Versturen</h4>
+                    <p>Vul al de velden in, en klik dan op <strong>Vraag subsidie aan bij Vlaamse overheid</strong>. U kan tussentijds concepten bewaren.</p>
+                    <img src="img/subsidies/subsidies-4-0-concept.png" class="au-c-manual-picture"  alt="">
+                    <p class="au-u-margin-bottom">Enkel concepten kunnen verwijderd worden. Verstuurde aanvragen niet.</p>
+
+                    <div id="subsidiebeheer-opvolging">
+                      <h4>Opvolging</h4>
+                      <p>Een verstuurde subsidieaanvraag kan enkel bekeken worden. U kan de bijlagen wel downloaden, maar niet aanpassen of verwijderen. Indien u een fout heeft ontdekt of een vraag heeft, neem contact op met <a href="mailto:LoketLokaalBestuur@vlaanderen.be" class="au-c-link">LoketLokaalBestuur@vlaanderen.be</a>.</p>
+                      <img src="img/subsidies/subsidies-4-1-verstuurd.png" class="au-c-manual-picture au-u-margin-bottom"  alt="">
+                    </div>
 
                     <div id="subsidiebeheer-wijziging">
                       <h4>Een wijziging doorvoeren</h4>
-                      <div class="au-o-grid">
-                        <div class="au-o-grid__item">
-                          <p>Een verstuurde subsidieaanvraag kan enkel bekeken worden. U kan de bijlagen wel downloaden, maar niet aanpassen of verwijderen. Indien u een fout heeft ontdekt of een vraag heeft, neem contact op met <a href="mailto:LoketLokaalBestuur@vlaanderen.be" class="au-c-link">LoketLokaalBestuur@vlaanderen.be</a>.</p>
-                          <img src="img/subsidies/subsidies-4-1-verstuurd.png" class="au-c-manual-picture au-u-margin-bottom"  alt="">
-                        </div>
-                        <div class="au-o-grid__item">
-                          <p>Een concept kan bewerkt worden en bewaard, verstuurd of verwijderd.</p>
-                          <img src="img/subsidies/subsidies-4-0-concept.png" class="au-c-manual-picture au-u-margin-bottom"  alt="">
-                        </div>
-                      </div>
+                      <p>Een verstuurde subsidieaanvraag kan enkel bekeken worden. U kan de bijlagen wel downloaden, maar niet aanpassen of verwijderen. Indien u een fout heeft ontdekt of een vraag heeft, neem contact op met <a href="mailto:LoketLokaalBestuur@vlaanderen.be" class="au-c-link">LoketLokaalBestuur@vlaanderen.be</a>.</p>
                     </div>
                   </div>
                 </section>
