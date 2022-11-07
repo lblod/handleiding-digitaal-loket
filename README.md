@@ -1,5 +1,7 @@
 # Handleiding-digitaal-loket
 
+> The user manual for Digitaal Loket has moved to [Gitbook](https://app.gitbook.com/o/-MP9Yduzf5xu7wIebqPG/s/-MUxLEJUEskn-COptDln/). This repository will no longer be updated.
+
 ## Onderdelen van deze handleiding
 
 - Toezicht
